@@ -1,0 +1,114 @@
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #000000, #fafb63, #8ffbff);
+    font-family: Arial, sans-serif;
+    color: #000;
+    margin: 0;
+  }
+  
+  /* Container Styling */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .logo h1 {
+    font-family: Jaturat SemiBold, sans-serif;
+    font-size: 50px;
+    color: #fafb63;
+    margin: 0;
+  }
+  
+  .logo span {
+    font-family: Montserrat Classic, sans-serif;
+    font-size: 20px;
+    color: #8ffbff;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Premium Features Styling */
+  .premium-features {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .premium-features h2 {
+    font-family: Montserrat Classic, sans-serif;
+    font-size: 22px;
+    color: #fafb63;
+    margin: 0;
+  }
+  
+  .premium-features p {
+    font-family: Montserrat Classic, sans-serif;
+    font-size: 16px;
+    color: #fafb63;
+  }
+  
+  /* Sign Up Box Styling */
+  .sign-up-box {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  input[type=email] {
+    font-family: Montserrat Classic, sans-serif;
+    font-size: 16px;
+    color: #000;
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  button[type=submit] {
+    font-family: Montserrat Classic, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #8ffbff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Uni-Bot Support Box Styling */
+  .uni-bot-support {
+    flex-basis: 100%;
+    margin-top: 50px;
+  }
+  
+  .uni-bot-support .support-header {
+    background-color: #fafb63;
+    color: #000;
+    font-family: Fira Code, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .uni-bot-support .support-content {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  
