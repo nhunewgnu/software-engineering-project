@@ -1,0 +1,100 @@
+intents:
+  - greet:
+      examples: |
+        - Hi
+        - Hello
+  - goodbye:
+      examples: |
+        - Goodbye
+        - See you later
+  - about_university:
+      examples: |
+        - Tell me about the university
+        - What can you tell me about the university?
+        - Uni info
+        - University info
+        - Rowan info
+        - rowan info
+        - university info
+
+  - registration_process:
+      examples: |
+        - What is the registration process at Rowan University?
+        - How do I register for classes at Rowan University?
+        - register for classes
+        - class registration
+        - how to register for classes
+        - register class
+  - banner_self_service:
+      examples: |
+        - How do I access Banner Self-Service for registration?
+        - Banner
+        - banner
+        - banner self service
+        - self service banner
+        - banner registration
+  - registration_deadline:
+      examples: |
+        - What is the deadline for registering for classes at Rowan University?
+        - Registration deadline
+        - registration deadline
+        - deadline for registration
+  - add_drop_course:
+      examples: |
+        - How do I add or drop a course at Rowan University?
+        - Drop a course
+        - drop a course
+        - drop course
+
+responses:
+  utter_greet:
+    - text: Hello! How can I assist you?
+  utter_goodbye:
+    - text: Goodbye! Have a great day.
+  utter_about_university:
+    - text: The university is a leading institution for higher education, recognized for its academic excellence and its commitment to research and innovation. It offers a wide range of undergraduate and graduate programs in various fields, from engineering and computer science to humanities and social sciences.
+  utter_registration_process:
+    - text: To register for classes at Rowan University, you must first meet with your academic advisor to discuss your course schedule and academic progress. Once you have selected your courses, you can register for them online through the university's student portal, Banner Self-Service.
+  utter_banner_self_service:
+    - text: You can access Banner Self-Service for registration by logging into the university's student portal with your Rowan ID and password. If you have any issues accessing Banner Self-Service, you can contact the Office of Information Resources & Technology for assistance.
+  utter_registration_deadline:
+    - text: The deadline for registering for classes at Rowan University varies depending on the semester and the type of course. You can find registration deadlines and other important dates on the university's academic calendar.
+  utter_add_drop_course:
+    - text: To add or drop a course at Rowan University, you can log into Banner Self-Service and follow the prompts to make changes to your course schedule. You may also need to meet with your academic advisor to discuss any changes to your course schedule.
+
+rules:
+  - rule: Say hello and ask how we can assist
+    steps:
+      - intent: greet
+        action: utter_greet
+      - action: action_listen
+  - rule: Answer questions about the university
+    steps:
+      - intent: about_university
+        action: utter_about_university
+      - action: action_listen
+  - rule: Provide information about the registration process
+    steps:
+      - intent: registration_process
+        action: utter_registration_process
+      - action: action_listen
+  - rule: Explain how to access Banner Self-Service
+    steps:
+      - intent: banner_self_service
+        action: utter_banner_self_service
+      - action: action_listen
+  - rule: Provide registration deadlines
+    steps:
+      - intent: registration_deadline
+        action: utter_registration_deadline
+      - action: action_listen
+  - rule: Explain how to add or drop a course
+    steps:
+      - intent: add_drop_course
+        action: utter_add_drop_course
+      - action: action_listen
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+        action: utter_goodbye
+      - action: action_listen
