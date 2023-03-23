@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="unibot.css">
     <title>UNIBOT</title>
-	<style>
+    <style>
         #btn-container {
             position: absolute;
             top: 10px;
             right: 10px;
         }
-		#btn-container button {
+        #btn-container button {
             margin-left: 10px;
-		}
+        }
     </style>
 </head>
 <body>
     <body class="space-bg">
-        
-	<div id="btn-container">
+
+    <div id="btn-container">
         <button type="button" class="btn">
             <strong>SIGN IN</strong>
             <div id="container-stars">
@@ -32,37 +32,71 @@
                 <div class="circle"></div>
             </div>
         </button>
-		<button type="button" class="btn">
-			<strong>SIGN UP</strong>
-		</button>
+        <button type="button" class="btn">
+            <strong>SIGN UP</strong>
+        </button>
     </div>
+    
     <div class="wrapper">
         <div class="title">UNIBOT SUPPORT</div>
-        <div class="box">
+        <div class="box" id="chat-box">
             <div class="item">
                 <div class="icon">
                     <i class="fa fa-user"></i>
                 </div>
-                <div class="msg">
+                <div class="msg" id="greeting">
                     <p>Hi there</p>
                 </div>
             </div>
             <br clear="both">
-            <div class="item right">
-                <div class="msg">
-                    <p>Nice</p>
-                </div>
-				
-            </div>
         </div>
-        
+
         <div class="typing-area">
             <div class="input-field">
                 <input placeholder="Enter your message" class="input" name="text" type="text">
-                <button>Send</button>
+                <button onclick="sendMessage()">Send</button>
             </div>
         </div>
     </div>
+
+    <script>
+        window.onload = function() {
+            var greeting = document.getElementById("greeting");
+            greeting.innerHTML = "<p>Hi there! How can I assist you today?</p>";
+        }
+
+        function sendMessage() {
+            var inputField = document.querySelector(".input");
+            var messageText = inputField.value;
+
+            var chatBox = document.getElementById("chat-box");
+
+            var messageElement = document.createElement("div");
+            messageElement.classList.add("item");
+            messageElement.classList.add("right");
+
+            var iconElement = document.createElement("div");
+            iconElement.classList.add("icon");
+            var icon = document.createElement("i");
+            icon.classList.add("fa");
+            icon.classList.add("fa-user");
+            iconElement.appendChild(icon);
+
+            var msgElement = document.createElement("div");
+            msgElement.classList.add("msg");
+
+            var textElement = document.createElement("p");
+            textElement.innerHTML = messageText;
+            msgElement.appendChild(textElement);
+
+            messageElement.appendChild(iconElement);
+            messageElement.appendChild(msgElement);
+
+            chatBox.appendChild(messageElement);
+
+            inputField.value = "";
+        }
+    </script>
     
 </body>
 </html>
