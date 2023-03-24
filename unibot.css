@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
+* { /* Applying global styles to all HTML elements */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body { /* Applying styles to the body element */
     font-family: 'Poppins', sans-serif;
-    background-color: black;
-    display: flex;
-    justify-content: center;
+    background-color: black;  /* Setting the background color of the body */
+    display: flex; /* Using flexbox to center the content vertically and horizontally */
+    justify-content: center; 
     align-items: center;
     min-height: 100vh;
 }
 
-body.space-bg {
+body.space-bg { /* Website's background is imported from the link below */
   background-image: url("https://media1.giphy.com/media/l5JbspfwZ0yjHjlJ0K/giphy.gif?cid=ecf05e47yetqrviozpo6tvc9s7zbslzxgig19ozxc0xgffrk&rid=giphy.gif&ct=g");
   background-size: cover;
   animation: move-bg 30s linear infinite;
@@ -23,7 +23,7 @@ body.space-bg {
 
 @keyframes move-bg {
   from {
-      background-position: 10 0;
+      background-position: 10 0; 
   }
   to {
       background-position: 50% 0;
