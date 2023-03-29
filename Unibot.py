@@ -40,7 +40,7 @@ def response(user_response):
     similarity_scores = []
 
     for i in range(len(se_tokens) - 1):
-        ratio = fuzz.token_sort_ratio(se_tokens[i], user_response)
+        ratio = fuzz.token_set_ratio(se_tokens[i], user_response)
         weighted_score = vals[0][i] + (ratio / 100)
         similarity_scores.append(weighted_score)
 
