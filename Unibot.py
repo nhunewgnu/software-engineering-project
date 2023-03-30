@@ -57,7 +57,7 @@ def chat_flow():
 
     flag = True
     print("Bot: Hi there! How can I assist you today?")
-
+    print("Hello")
     while(flag):
         user_response = input("User: ")
         user_response = user_response.lower()
