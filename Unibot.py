@@ -11,8 +11,8 @@ from fuzzywuzzy import fuzz
 with open("data.txt", "r", encoding = "UTF-8") as data_file:
     text = data_file.read()
     text = text.lower()
-    se_tokens = nltk.sent_tokenize(text)
-    wo_tokens = nltk.word_tokenize(text)
+    sentence_tokens = nltk.sent_tokenize(text)
+    word_tokens = nltk.word_tokenize(text)
 
 
 def LemNormalize(words_list):
@@ -35,12 +35,12 @@ def response(user_response):
     bot_response = ""
 
     TfidVec = TfidfVectorizer(tokenizer=LemNormalize, stop_words="english")
-    tfidf = TfidVec.fit_transform(se_tokens)
+    tfidf = TfidVec.fit_transform(sentence_tokens)
     vals = cosine_similarity(tfidf[-1], tfidf)
     similarity_scores = []
 
-    for i in range(len(se_tokens) - 1):
-        ratio = fuzz.token_set_ratio(se_tokens[i], user_response)
+    for i in range(len(sentence_tokens) - 1):
+        ratio = fuzz.token_set_ratio(sentence_tokens[i], user_response)
         weighted_score = vals[0][i] + (ratio / 100)
         similarity_scores.append(weighted_score)
 
@@ -49,7 +49,7 @@ def response(user_response):
 
     else:
         idx = similarity_scores.index(max(similarity_scores))
-        bot_response = se_tokens[idx]
+        bot_response = sentence_tokens[idx]
 
     return bot_response
 
@@ -79,10 +79,10 @@ def chat_flow():
                     print("Bot: " + greetings(user_response))
 
                 else:
-                    se_tokens.append(user_response)
-                    # wo_tokens.extend(nltk.word_tokenize(user_response))
-                    # final_words = list(set(wo_tokens))
+                    sentence_tokens.append(user_response)
+                    # word_tokens.extend(nltk.word_tokenize(user_response))
+                    # final_words = list(set(word_tokens))
                     print(f"Bot: {response(user_response)}")
-                    se_tokens.remove(user_response)
+                    sentence_tokens.remove(user_response)
 
 chat_flow()
