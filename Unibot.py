@@ -54,7 +54,6 @@ def response(user_response):
     return bot_response
 
 def chat_flow():
-
     flag = True
     print("Bot: Hi there! How can I assist you today?")
     print("Hello")
@@ -81,8 +80,8 @@ def chat_flow():
 
                 else:
                     se_tokens.append(user_response)
-                    wo_tokens.extend(nltk.word_tokenize(user_response))
-                    final_words = list(set(wo_tokens))
+                    # wo_tokens.extend(nltk.word_tokenize(user_response))
+                    # final_words = list(set(wo_tokens))
                     print(f"Bot: {response(user_response)}")
                     se_tokens.remove(user_response)
 
