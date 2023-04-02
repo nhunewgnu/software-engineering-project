@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from Unibot import chat_flow
+from Unibot2 import chat_flow
 app = Flask(__name__)
 
 @app.post("/predict")
