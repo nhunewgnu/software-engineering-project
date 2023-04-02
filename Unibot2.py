@@ -46,37 +46,20 @@ def response(user_response):
        return robo1_response
 
 
-def chat_flow():
-   word_tokens = nltk.word_tokenize(text)
-   flag = True
-   print("Bot: Hi there! How can I assist you today?")
+def chat_flow(user_response):
+    word_tokens = nltk.word_tokenize(text)
 
-   while(flag):
-       user_response = input("User: ")
-       user_response = user_response.lower()
-
-       if(user_response == "bye"):
-           flag = False
-           print("Bot: Goodbye!")
-
-       else:
-           if(user_response.startswith("Thank".lower())):
-               print("Bot: You are Welcome. Is that all")
-
-               u_response = input("User: ")
-               if(u_response == "yes" or u_response == "yep"):
-                   print("Bot: Goodbye!")
-                   flag = False
-
-           else:
-               if(greetings(user_response) != None):
-                   print("Bot: " + greetings(user_response))
-
-               else:
-                   sentence_tokens.append(user_response)
-                   word_tokens = word_tokens + nltk.word_tokenize(user_response)
-                   final_words = list(set(word_tokens))
-                   print(f"Bot: {response(user_response)}")
-                   sentence_tokens.remove(user_response)
-
-chat_flow()
+    if (user_response == "bye"):
+        return "Bot: Goodbye!"
+    elif (user_response.startswith("Thank".lower())):
+        return "Bot: You are Welcome. Is that all"
+    elif (greetings(user_response) != None):
+        return "Bot: " + greetings(user_response)
+    else:
+        sentence_tokens.append(user_response)
+        word_tokens = nltk.word_tokenize(text)
+        word_tokens += nltk.word_tokenize(user_response)
+        final_words = list(set(word_tokens))
+        bot_response = response(user_response)
+        sentence_tokens.remove(user_response)
+        return bot_response
