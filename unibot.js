@@ -28,5 +28,9 @@ inputField.addEventListener("keypress", function(event) {
 function getBotResponse(message) {
     // TODO: Implement a list of queries and corresponding responses
     // Return the appropriate response based on the user's message
+        vat xhr = new XMLHttpRequest();
+        xhr.open("POST", "/chat_bot);
+        xhr.send();
 }
 });
+
