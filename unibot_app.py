@@ -5,7 +5,6 @@ unibot_app = Flask(__name__)
 
 @app.route('/chat_bot', methods=['POST'])
 def respond():
-    message = request.json['message']
     response = chat_flow()
     return response
 
