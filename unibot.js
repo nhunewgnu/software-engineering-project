@@ -9,28 +9,25 @@ function sendMessage() {
     userMsg.innerHTML = '<div class="msg"><p>' + messageText + '</p></div>';
     chatBox.appendChild(userMsg);
 
-    // TODO: Send message using AJAX or WebSocket
-
-    // Display bot response in chat box
-    var botMsg = document.createElement("div");
-    botMsg.classList.add("item");
-    botMsg.innerHTML = '<div class="icon"><i class="fa fa-user"></i></div><div class="msg"><p>' + getBotResponse(messageText) + '</p></div>';
-    chatBox.appendChild(botMsg);
-
-    inputField.value = "";
+    // Send message using AJAX
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/chat_bot");
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            var botMsg = document.createElement("div");
+            botMsg.classList.add("item");
+            botMsg.innerHTML = '<div class="icon"><i class="fa fa-user"></i></div><div class="msg"><p>' + xhr.responseText + '</p></div>';
+            chatBox.appendChild(botMsg);
+            inputField.value = "";
+        }
+    };
+    xhr.send(JSON.stringify({message: messageText}));
 }
+
 var inputField = document.querySelector(".input");
 inputField.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         sendMessage();
     }
-
-function getBotResponse(message) {
-    // TODO: Implement a list of queries and corresponding responses
-    // Return the appropriate response based on the user's message
-        vat xhr = new XMLHttpRequest();
-        xhr.open("POST", "/chat_bot);
-        xhr.send();
-}
 });
-
