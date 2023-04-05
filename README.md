@@ -18,7 +18,6 @@ ssh -i "unibot.pem" ec2-user@ec2-54-172-200-254.compute-1.amazonaws.com
 1. First, install Git on your instance if you haven't already:
 ```
 sudo yum install git
-
 ```
 2. Navigate to the directory where you want to clone your repository.
 3. Run the following command to clone the repository, replacing "your-repo-url.git" with the actual URL of your repository:
@@ -34,7 +33,6 @@ git clone https://github.com/nhunewgnu/software-engineering-project.git
 
 ```
 git add file1 file2 file3
-
 ```
 
 Replace "file1 file2 file3" with the actual names of the files you want to stage. You can also use `git add .` to stage all changes in the repository.
@@ -42,13 +40,11 @@ Replace "file1 file2 file3" with the actual names of the files you want to stage
 3. Commit your changes with a descriptive message:
 ```
 git commit -m "Your commit message here"
-
 ```
 
 4. Finally, push your changes to the remote repository:
 ```
 git push origin main
-
 ```
 Note: If you have not set up your Git credentials, you might need to configure them using the following commands:
 
