@@ -1,8 +1,13 @@
 # Accessing the AWS Instance
 
-1. Open your terminal or command prompt.
-2. Navigate to the directory containing your "unibot.pem" private key file.
-3. Run the following command to access your AWS instance via SSH:
+1. Make sure that you have a private key file, obtain the file from the repository by copy and paste into a text file and name that 'unibot.pem'
+2. Open your terminal or command prompt.
+3. Navigate to the directory containing your "unibot.pem" private key file.
+4. Run this command first to ensure that the key is not publicly viewable
+```
+chmod 400 unibot.pem
+```
+5. Then run the following command to access your AWS instance via SSH:
 ```
 ssh -i "unibot.pem" ec2-user@ec2-54-172-200-254.compute-1.amazonaws.com
 ```
