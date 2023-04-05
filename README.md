@@ -1,5 +1,8 @@
-# software-engineering-project
-Nhu Tran 
-This is a readme file
+# Accessing the AWS Instance
 
-https://htmlpreview.github.io/?https://github.com/nhunewgnu/software-engineering-project/blob/main/unibot.html
+1. Open your terminal or command prompt.
+2. Navigate to the directory containing your "unibot.pem" private key file.
+3. Run the following command to access your AWS instance via SSH:
+```
+ssh -i "unibot.pem" ec2-user@ec2-54-172-200-254.compute-1.amazonaws.com
+```
