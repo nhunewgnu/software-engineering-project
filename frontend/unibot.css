@@ -124,6 +124,7 @@ body.space-bg { /* Website's background is imported from the link below */
     padding-right: 70px; /* space for submit button */
     font-family: 'Poppins', sans-serif; /* sets font family */
     transition: 0.3s all ease; /* adds transition effect */
+    color: white;
 }
 
 /* Styles for custom input component */
