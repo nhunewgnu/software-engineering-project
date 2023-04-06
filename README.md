@@ -9,7 +9,7 @@ chmod 400 unibot.pem
 ```
 5. Then run the following command to access your AWS instance via SSH:
 ```
-ssh -i "unibot.pem" ec2-user@ec2-54-172-200-254.compute-1.amazonaws.com
+ssh -i "unibot.pem" ec2-user@ec2-107-20-124-52.compute-1.amazonaws.com
 ```
 
 # Navigating the Instance
