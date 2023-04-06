@@ -9,4 +9,4 @@ def respond():
     return response
 
 if __name__ == "__main__":
-    unibot_app.run()
+    unibot_app.run(hosts='127.0.0.1', port=5000)
