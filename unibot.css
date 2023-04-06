@@ -37,6 +37,11 @@ body.space-bg { /* Website's background is imported from the link below */
   width: 370px;
 }
 
+.wrapper .title a {
+    color: white;
+    text-decoration: none;
+}
+
 /* Style of a title element within the wrapper */
 .wrapper .title {
   color: rgb(255, 43, 227); /* Sets the title color to a shade of pink */
