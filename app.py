@@ -2,6 +2,10 @@ from flask import Flask, render_template, request, jsonify
 from Unibot2 import chat_flow
 app = Flask(__name__)
 
+@app.route("/")
+def index():
+    return render_template("unibot.html")
+
 @app.post("/predict")
 def predict():
     text = request.get_json().get("message")
