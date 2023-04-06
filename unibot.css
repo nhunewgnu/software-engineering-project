@@ -32,6 +32,19 @@ body.space-bg { /* Website's background is imported from the link below */
   }
 }
 
+/* Added logo styling */
+      .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        background-image: url('https://cdn.discordapp.com/attachments/1070089250286075945/1093232253573804032/Uni-Bot.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10px;
+      }
+
 /* Container with a fixed width of 370 pixels */
 .wrapper {
   width: 370px;
