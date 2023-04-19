@@ -7,8 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from fuzzywuzzy import fuzz
 
-
-with open("data.txt", "r", encoding = "UTF-8") as data_file:
+with open("data.txt", "r", encoding="UTF-8") as data_file:
     text = data_file.read()
     text = text.lower()
     sentence_tokens = nltk.sent_tokenize(text)
@@ -23,6 +22,7 @@ def LemNormalize(words_list):
     lemmatized = [lem.lemmatize(token) for token in tokens]
     return lemmatized
 
+
 def greetings(greeting_sentence):
     greeting_inputs = ["hello", "hi", "hey", "how is it going?", "how are you doing?", "what's up", "whats up"]
     greeting_response = ["Hello", "Hi", "Hey", "How is it going?", "How are you doing?"]
@@ -30,8 +30,8 @@ def greetings(greeting_sentence):
     if greeting_sentence in greeting_inputs:
         return random.choice(greeting_response)
 
-def response(user_response):
 
+def response(user_response):
     bot_response = ""
 
     TfidVec = TfidfVectorizer(tokenizer=LemNormalize, stop_words="english")
@@ -46,43 +46,39 @@ def response(user_response):
 
     if not similarity_scores:
         bot_response = bot_response + "I am unable to answer that question, sorry."
-
     else:
         idx = similarity_scores.index(max(similarity_scores))
         bot_response = sentence_tokens[idx]
 
     return bot_response
 
-def chat_flow():
+
+def chat_flow(user_input):
+    bot_response = ""
     flag = True
-    print("Bot: Hi there! How can I assist you today?")
+    bot_response += "Bot: Hi there! How can I assist you today?\n"
 
-    while(flag):
-        user_response = input("User: ")
-        user_response = user_response.lower()
+    while flag:
+        user_response = user_input.lower()
 
-        if("bye" in user_response):
+        if "bye" in user_response:
             flag = False
-            print("Bot: Goodbye!")
+            bot_response += "Bot: Goodbye!\n"
 
         else:
-            if(user_response.startswith("Thank".lower())):
-                print("Bot: You are Welcome. Is that all")
-
-                u_response = input("User: ")
-                if(u_response == "yes" or u_response == "yep"):
-                    print("Bot: Goodbye!")
+            if user_response.startswith("thank"):
+                bot_response += "Bot: You are welcome. Is that all?\n"
+                user_response = input("User: ")
+                if user_response.lower() == "yes" or user_response.lower() == "yep":
+                    bot_response += "Bot: Goodbye!\n"
                     flag = False
 
             else:
-                if(greetings(user_response) != None):
-                    print("Bot: " + greetings(user_response))
-
+                if greetings(user_response) is not None:
+                    bot_response += "Bot: " + greetings(user_response) + "\n"
                 else:
                     sentence_tokens.append(user_response)
-                    # word_tokens.extend(nltk.word_tokenize(user_response))
-                    # final_words = list(set(word_tokens))
-                    print(f"Bot: {response(user_response)}")
+                    bot_response += f"Bot: {response(user_response)}\n"
                     sentence_tokens.remove(user_response)
 
-chat_flow()
+    return bot_response
