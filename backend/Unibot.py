@@ -75,7 +75,7 @@ def train(user_response):
 
 def chat_flow(user_input):  
     bot_response = ""    
-    user_response = user_response.lower()
+    user_response = user_input.lower()
 
     if "bye" in user_response:
         bot_response += "Bot: Goodbye!"
