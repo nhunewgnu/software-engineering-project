@@ -232,16 +232,13 @@ Students can discuss their options for taking a gap year with their advisors.
 
 Advisors can provide information on the process of applying for readmission.
 
-
-**Campus Housing**
-
 Campus housing options include traditional residence halls, apartment-style units, and suite-style units.
 
 Both first-year and upperclass students are eligible for campus housing.
 
 Freshmen are required to live on campus unless they meet specific exemption criteria.
 
-On-campus housing is not guaranteed for all students but is typically available for those who apply by the priority 
+On-campus housing is not guaranteed for all students but is typically available for those who apply by the priority
 deadline.
 
 Housing applications are completed through the university's housing portal.
@@ -282,7 +279,7 @@ Students can request a room change during designated room change periods.
 
 Students can appeal their housing assignment if they have a legitimate reason, such as a documented medical need.
 
-Some residence halls have themed living-learning communities, where students with similar interests or majors live 
+Some residence halls have themed living-learning communities, where students with similar interests or majors live
 together.
 
 Each residence hall has common spaces, such as lounges and study areas.
@@ -313,14 +310,12 @@ Violations of university policies may result in disciplinary action, including r
 
 Students can apply for summer housing if they are enrolled in summer courses or participating in university-sponsored activities.
 
-Off-campus housing options include apartments, houses, and rooms for rent, which can be found through the university's 
+Off-campus housing options include apartments, houses, and rooms for rent, which can be found through the university's
 off-campus housing website.
 
 The university provides resources and support for students transitioning to off-campus living.
 
 Students can request a housing contract release if they have a legitimate reason, such as studying abroad, transferring, or withdrawing from the university.
-
-**Campus Activities**
 
 Rowan University offers a wide range of campus activities, including clubs, organizations, intramural sports, and cultural events.
 
@@ -384,7 +379,6 @@ Students can attend workshops and events on topics such as stress management, ti
 
 The Rowan University Art Club provides opportunities for students to explore their creative side through various art
 
-**Parking**
 Parking permits are required for all vehicles parked on campus.
 
 Students can purchase parking permits online through the university's parking services website.
@@ -457,8 +451,6 @@ Rowan University's parking facilities are maintained by the university's facilit
 
 Parking permits are not required during weekends, unless specified by the university for special events or circumstances.
 
-**Maps & Directions**
-
 The main campus of Rowan University is located in Glassboro, New Jersey.
 
 The Rowan University campus map can be found online on the university's website.
@@ -526,8 +518,6 @@ Off-campus housing options can be found in the surrounding Glassboro area and ar
 The Rowan Boulevard development, located adjacent to campus, offers additional dining, shopping, and housing options.
 
 The Edelman Planetarium, located in Science Hall, offers public shows and educational programming.
-
-**Registraion**
 
 Course registration at Rowan University is completed online through the self-service Banner system.
 
@@ -729,8 +719,6 @@ Transfer students can visit the Rowan University Art Gallery, Edelman Planetariu
 
 Rowan University's Alumni Association offers networking opportunities, career resources, and lifelong connections for transfer students after graduation.
 
-**Off Campus Activities**
-
 Downtown Glassboro, located within walking distance of Rowan University, offers a variety of restaurants, shops, and entertainment venues for students to enjoy.
 
 Rowan Boulevard, a mixed-use development adjacent to campus, features retail stores, restaurants, and housing options for students.
@@ -788,8 +776,6 @@ The nearby Philadelphia Zoo, the oldest zoo in the United States, offers a varie
 Students can visit the nearby Battleship New Jersey, a historic naval museum located on the Camden Waterfront.
 
 The nearby Independence National Historical Park in Philadelphia, PA, is home to iconic sites such as the Liberty Bell and
-
-**Graduations**
 
 Rowan University typically holds its commencement ceremonies in May for spring graduates and in December for winter graduates.
 
@@ -849,8 +835,6 @@ The university's career center offers resources and support for graduating stude
 
 Graduating students should ensure their financial obligations, such as tuition and fees, are settled before the commencement ceremony to avoid delays in receiving their diploma.
 
-**Graduate Students**
-
 Rowan University offers a variety of graduate degree programs, including master's, doctoral, and professional degrees across multiple disciplines.
 
 Prospective graduate students can apply online through the Rowan University graduate admissions portal.
@@ -908,8 +892,6 @@ Graduate students can receive support in finding off-campus housing through the 
 Graduate students are encouraged to attend campus events and activities to connect with the Rowan University community and build their social network.
 
 The Math Learning Center provides free tutoring and support for graduate students enrolled in math courses at Rowan University.
-
-**Graduate Program**
 
 Rowan University offers a variety of graduate degree programs, including master's, doctoral, and professional degrees across multiple disciplines.
 
@@ -2183,7 +2165,7 @@ The Department of Public Safety collaborates with the Office of Environmental He
 
 Rowan University provides information and guidance for emergency preparedness during study abroad programs and international travel.
 
-The Department of Public Safety offers vehicle assistance services, such as jump-starts and vehicle lockouts, for students, faculty, and staff.
+The Department of Public Safety offers vehicle assistance services, such as jump-starts and vehicle lockouts, for students, faculty, and staff
 
 The official Rowan University website (www.rowan.edu) is the primary source of news and information about the university.
 
@@ -2788,7 +2770,6 @@ The university provides a variety of resources and support services for students
 Rowan University offers a range of resources and support services for students who are interested in pursuing careers in the healthcare field, including internship opportunities, career advising, and networking events.
 
 The university provides a variety of resources and support services for students who are interested in pursuing careers in the sports industry, including internship opportunities, career advising, and networking events.
-
 
 Rowan University offers a variety of resources and support services for students who are interested in pursuing careers in the environmental field, including internship opportunities, career advising, and networking events.
 

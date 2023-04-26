@@ -55,3 +55,4 @@ logoutBtn.addEventListener("click", () => {
       authOptions.style.display = "block";
     }
   }
+

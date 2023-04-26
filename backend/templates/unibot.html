@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Set the compatibility mode to Internet Explorer and the viewport width to the width of the device screen -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">     <!-- Link to the Font Awesome library for icons -->
-    <link rel="stylesheet" href="unibot.css"> <!-- Link to an external stylesheet named "unibot.css" for additional styles -->
+    <link rel="stylesheet" href="../static/unibot.css">
     <title>UNIBOT</title>     <!-- Set the title of the HTML document to "UNIBOT" -->
     <style>
         #btn-container { /* Select the element with an ID of "btn-container" and set its position */
@@ -19,11 +19,11 @@
     </style>
 </head>
 <body>
+        <img src="https://github.com/nhunewgnu/software-engineering-project/blob/main/Uni-Bot.png?raw=true" alt="UNIBOT Logo" class="logo">
     <body class="space-bg">  <!-- A container for two buttons that allow the user to sign in or sign up -->
-
     <div id="btn-container">
         <button id="login-btn" type="button" class="btn">
-            <strong>SIGN IN</strong> <!-- The text "SIGN IN" is displayed in bold -->
+            <strong><a href="login"> SIGN IN </a></strong> <!-- The text "SIGN IN" is displayed in bold -->
             <div id="container-stars"> <!-- A container for some animated stars -->
                 <div id="stars"></div>
             </div>
@@ -33,10 +33,10 @@
             </div>
         </button>
         <button id="signin-btn" type="button" class="btn">
-            <strong>SIGN UP</strong> <!-- The text "SIGN UP" is displayed in bold -->
+            <strong><a href="sign-up"> SIGN UP </a></strong> <!-- The text "SIGN UP" is displayed in bold -->
         </button>
     </div>
-    
+
     <div class="wrapper"> <!-- A container for the main content of the page -->
         <div class="title">UNIBOT SUPPORT</div> <!-- A title for the support section of the page -->
         <div class="box" id="chat-box"> <!-- A chat box where messages from the bot and user will be displayed -->
@@ -53,7 +53,7 @@
 
         <div class="typing-area"> <!-- A typing area for the user to enter messages -->
             <div class="input-field"> <!-- An input field for the user to enter text -->
-                <input placeholder="Enter your message" class="input" type="text">
+                <input placeholder="Enter your message" class="input" name="text" type="text">
                 <button onclick="sendMessage()">Send</button> <!-- A button to submit the user's message -->
             </div>
         </div>
@@ -62,7 +62,7 @@
     <script> //this will run when the page loads
         window.onload = function() {
             var greeting = document.getElementById("greeting"); // Get the "greeting" element and set its inner HTML to a welcome message
-            greeting.innerHTML = "<p>Hi there! How can I assist you today?</p>"; 
+            greeting.innerHTML = "<p>Hi there! How can I assist you today?</p>";
         }
 
         function sendMessage() { //this will send a message
@@ -70,7 +70,7 @@
             var messageText = inputField.value;
 
             var chatBox = document.getElementById("chat-box"); // Get the chat box and create a new message element
-            var messageElement = document.createElement("div"); 
+            var messageElement = document.createElement("div");
             messageElement.classList.add("item");
             messageElement.classList.add("right");
 
@@ -102,6 +102,7 @@ function handleKeyUp(event) { // This function handles the "keyup" event
     }
 }
     </script>
-    
+<script src="{{ url_for('static', filename='unibot.js') }}"></script>
+
 </body>
 </html>
