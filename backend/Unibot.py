@@ -78,23 +78,23 @@ def chat_flow(user_input):
     user_response = user_input.lower()
 
     if "bye" in user_response:
-        bot_response += "Bot: Goodbye!"
+        bot_response += "Goodbye!"
 
     else:
         if user_response.startswith("Thank".lower()):
-            bot_reponse += "Bot: You are Welcome. Is that all"
+            bot_reponse += "You are Welcome. Is that all"
             u_response += input("User: ")
 
             if u_response == "yes" or u_response == "yep":
-                bot_response += "Bot: Goodbye!"
+                bot_response += "Goodbye!"
 
         else:
             if greetings(user_response) != None:
-                bot_response += f"Bot: {greetings(user_response)}"
+                bot_response += greetings(user_response)
                
             else:
                 sentence_tokens.append(user_response)
-                bot_response += f"Bot: {response(user_response)}"
+                bot_response += response(user_response)
                 sentence_tokens.remove(user_response)
 
     return bot_response
