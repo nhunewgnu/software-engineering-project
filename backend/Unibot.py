@@ -78,7 +78,7 @@ def train(user_response):
     vals = vals.flatten()
     similarity_scores = []
 
-    for i in range(len(sentence_tokens)):
+    for i in range(len(sentence_tokens) - 1):
         ratio = fuzz.token_set_ratio(sentence_tokens[i], user_response)
         weighted_score = vals[i] * (ratio / 100)
         similarity_scores.append(weighted_score)
@@ -88,7 +88,6 @@ def train(user_response):
 def chat_flow(user_input):  
     bot_response = ""    
     user_response = user_input.lower()
-    
     
     if len(user_response) == 0:
         bot_response += "Please ask your question"
