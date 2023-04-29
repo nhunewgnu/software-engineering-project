@@ -88,8 +88,12 @@ def train(user_response):
 def chat_flow(user_input):  
     bot_response = ""    
     user_response = user_input.lower()
+    
+    
+    if len(user_response) == 0:
+        bot_response += "Please ask your question"
 
-    if "bye" in user_response:
+    elif "bye" in user_response:
         bot_response += "Goodbye!"
 
     else:
