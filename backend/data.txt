@@ -139,10 +139,13 @@ If you receive a parking ticket, you can pay the fine online through the Rowan U
 If you have a question or concern about parking on campus, you can contact Rowan University Parking Services at 856-256-4575 or parking@rowan.edu.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 Academic advisors help students with course selection, degree planning, understanding university policies, and connecting with campus resources.
 
 Both undergraduate and graduate students can benefit from academic advising.
@@ -239,9 +242,13 @@ Advisors can provide information on the process of applying for readmission.
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Campus Housing**
 =======
 >>>>>>> fb48b31 (addeD)
+=======
+**Campus Housing**
+>>>>>>> 7ad1cd2 (added)
 
 Campus housing options include traditional residence halls, apartment-style units, and suite-style units.
 
@@ -329,9 +336,13 @@ The university provides resources and support for students transitioning to off-
 Students can request a housing contract release if they have a legitimate reason, such as studying abroad, transferring, or withdrawing from the university.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Campus Activities**
 =======
 >>>>>>> fb48b31 (addeD)
+=======
+**Campus Activities**
+>>>>>>> 7ad1cd2 (added)
 
 Rowan University offers a wide range of campus activities, including clubs, organizations, intramural sports, and cultural events.
 
@@ -396,10 +407,14 @@ Students can attend workshops and events on topics such as stress management, ti
 The Rowan University Art Club provides opportunities for students to explore their creative side through various art
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Parking**
 =======
 
 >>>>>>> fb48b31 (addeD)
+=======
+**Parking**
+>>>>>>> 7ad1cd2 (added)
 Parking permits are required for all vehicles parked on campus.
 
 Students can purchase parking permits online through the university's parking services website.
@@ -473,9 +488,13 @@ Rowan University's parking facilities are maintained by the university's facilit
 Parking permits are not required during weekends, unless specified by the university for special events or circumstances.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Maps & Directions**
 =======
 >>>>>>> fb48b31 (addeD)
+=======
+**Maps & Directions**
+>>>>>>> 7ad1cd2 (added)
 
 The main campus of Rowan University is located in Glassboro, New Jersey.
 
@@ -546,9 +565,13 @@ The Rowan Boulevard development, located adjacent to campus, offers additional d
 The Edelman Planetarium, located in Science Hall, offers public shows and educational programming.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Registraion**
 =======
 >>>>>>> fb48b31 (addeD)
+=======
+**Registraion**
+>>>>>>> 7ad1cd2 (added)
 
 Course registration at Rowan University is completed online through the self-service Banner system.
 
@@ -649,11 +672,14 @@ Rowan University offers courses in a variety of disciplines, providing students 
 Students can use the course catalog and Section Tally to plan their schedules in advance and ensure they are prepared for registration when their appointment time arrives.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 Rowan University accepts transfer students from community colleges, four-year institutions, and international institutions.
 
 Transfer students must submit an application through the Common Application or the Rowan University online application portal.
@@ -757,10 +783,14 @@ Transfer students can visit the Rowan University Art Gallery, Edelman Planetariu
 Rowan University's Alumni Association offers networking opportunities, career resources, and lifelong connections for transfer students after graduation.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Off Campus Activities**
 =======
 
 >>>>>>> fb48b31 (addeD)
+=======
+**Off Campus Activities**
+>>>>>>> 7ad1cd2 (added)
 
 Downtown Glassboro, located within walking distance of Rowan University, offers a variety of restaurants, shops, and entertainment venues for students to enjoy.
 
@@ -821,10 +851,14 @@ Students can visit the nearby Battleship New Jersey, a historic naval museum loc
 The nearby Independence National Historical Park in Philadelphia, PA, is home to iconic sites such as the Liberty Bell and
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Graduations**
 =======
 
 >>>>>>> fb48b31 (addeD)
+=======
+**Graduations**
+>>>>>>> 7ad1cd2 (added)
 
 Rowan University typically holds its commencement ceremonies in May for spring graduates and in December for winter graduates.
 
@@ -885,10 +919,14 @@ The university's career center offers resources and support for graduating stude
 Graduating students should ensure their financial obligations, such as tuition and fees, are settled before the commencement ceremony to avoid delays in receiving their diploma.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Graduate Students**
 =======
 
 >>>>>>> fb48b31 (addeD)
+=======
+**Graduate Students**
+>>>>>>> 7ad1cd2 (added)
 
 Rowan University offers a variety of graduate degree programs, including master's, doctoral, and professional degrees across multiple disciplines.
 
@@ -948,11 +986,15 @@ Graduate students are encouraged to attend campus events and activities to conne
 
 The Math Learning Center provides free tutoring and support for graduate students enrolled in math courses at Rowan University.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 **Graduate Program**
 =======
 
 >>>>>>> fb48b31 (addeD)
+=======
+**Graduate Program**
+>>>>>>> 7ad1cd2 (added)
 
 Rowan University offers a variety of graduate degree programs, including master's, doctoral, and professional degrees across multiple disciplines.
 
@@ -1013,10 +1055,13 @@ Graduate students are encouraged to attend campus events and activities to conne
 The Math Learning Center provides free tutoring and support for graduate students enrolled in math courses at Rowan University.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 Rowan University offers undergraduate, graduate, and professional degree programs across various disciplines.
 
 The university is organized into several colleges and schools, such as the College of Humanities and Social Sciences, the College of Science and Mathematics, and the Rohrer College of Business.
@@ -1216,10 +1261,13 @@ Rowan University offers undergraduate programs in the sports and recreation fiel
 The university's graduate programs in the sports and recreation fields include disciplines such as sports administration, wellness and lifestyle management, and kinesiology.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 Banner is Rowan University's online student information system, which students, faculty, and staff can use to access and manage various academic and administrative records.
 
 To log in to Banner, you will need your Rowan Network username and password.
@@ -1285,10 +1333,13 @@ Banner allows students to access their Rowan Success Network, which provides per
 Students can view their academic standing, such as good standing, probation, or dismissal, in Banner.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 The Campbell Library offers a variety of resources, including books, e-books, journals, databases, and media materials for students, faculty, and staff to use.
 
 The Academic Success Center provides academic support services, such as tutoring, supplemental instruction, and writing support for students.
@@ -1354,10 +1405,13 @@ The Rowan Card Office manages the university's ID card system, including meal pl
 The Office of Transfer Services assists transfer students with the admission process, transfer credit evaluation, and academic advising.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 The main library at Rowan University is the Campbell Library, located on the Glassboro campus.
 
 The library's hours vary by semester and during breaks, with extended hours during finals week. Check the library website for the most up-to-date hours.
@@ -1421,10 +1475,13 @@ The library offers support for copyright and fair use questions, including guida
 The library provides access to a variety of open educational resources (OER), which can be used as free or low-cost alternatives to traditional textbooks.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 The Rowan University Bookstore, operated by Barnes & Noble, is the primary source for purchasing or renting textbooks and course materials.
 
 Students can find their required textbooks and materials by searching with their course information on the bookstore website or in-store.
@@ -1488,11 +1545,14 @@ Instructors may choose to use custom textbooks or course materials, which are sp
 The bookstore offers a variety of technology products, such as laptops, tablets, and accessories, for purchase.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 First-year students are required to attend orientation, which provides information on academic programs, campus resources, and opportunities to meet other students and faculty.
 
 On-campus housing is available for first-year students, with designated residence halls to help ease the transition to college life.
@@ -1554,10 +1614,13 @@ The Office of Transfer Services assists first-year transfer students with the ad
 The Technology Support Center provides technical assistance for first-year students, including computer and network troubleshooting and software support.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 Rowan University offers a variety of dining options, including all-you-care-to-eat facilities, food courts, cafes, and convenience stores.
 
 Meal plans are available for both on-campus and off-campus students, with different options to accommodate various preferences and budgets.
@@ -1623,10 +1686,13 @@ The University offers several meal plan options, allowing students to choose the
 Meal swipes are reset weekly or on a semester basis, depending on the meal plan chosen.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 Rowan University offers both Summer and Winter sessions, which provide opportunities for students to earn additional credits, complete general education requirements, or lighten their course load during the regular semesters.
 
 The Summer session is divided into multiple parts of term, including six-week and twelve-week options, to accommodate various course lengths and schedules.
@@ -1824,10 +1890,13 @@ Students who take Summer and Winter courses should be prepared to participate ac
 Rowan University's Summer and Winter sessions provide a unique and valuable opportunity for students to grow academically and personally, as they work toward their degree and future success.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 Rowan University offers a wide variety of extracurricular activities, including clubs, organizations, intramural sports, and special events.
 
 Students can join or start clubs based on their interests, ranging from academic and professional organizations to recreational and social clubs.
@@ -1885,10 +1954,13 @@ The university offers resources and support for students interested in entrepren
 Rowan University's multicultural organizations promote diversity and inclusion, fostering a supportive and welcoming environment for all students.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 The best professor at Rowan University is professor Pierantozzi
 
 Rowan University's professors and staff come from diverse academic backgrounds and bring a wealth of knowledge and experience to the campus community.
@@ -1952,10 +2024,13 @@ Rowan University's faculty and staff are dedicated to helping students develop t
 Professors often work closely with students on capstone projects, independent studies, or other individualized learning experiences.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 Greek Life at Rowan University includes a variety of fraternities and sororities, each with its own unique values, traditions, and focus areas.
 
 Joining a Greek organization provides students with opportunities for leadership, personal development, and lifelong friendships.
@@ -2055,10 +2130,13 @@ Greek organizations often provide opportunities for members to engage in network
 Greek Life at Rowan University is dedicated to creating a positive and meaningful experience for all members, providing opportunities for growth, friendship, and lifelong memories.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 The Technology Support Center (TSC) is the main point of contact for technology-related assistance at Rowan University.
 
 Students can contact the TSC for help with issues related to computer hardware, software, network connectivity, and more.
@@ -2128,10 +2206,13 @@ Rowan University offers resources and support for securing personal devices and 
 The TSC provides support for university-issued devices, such as laptops or tablets, including hardware repair and maintenance.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 Rowan University's Department of Public Safety provides 24/7 emergency response services for the campus community.
 
 In case of emergency, call 856-256-4911 for immediate assistance from the Department of Public Safety.
@@ -2233,10 +2314,13 @@ Rowan University provides resources and support for faculty and staff to develop
 The Department of Public Safety is committed to fostering a culture of safety and preparedness throughout the Rowan University community through ongoing education, training, and communication efforts.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 The Department of Public Safety at Rowan University is responsible for ensuring campus safety and security 24/7.
 
 The Department of Public Safety is staffed by trained and certified police officers, security officers, and dispatchers.
@@ -2298,12 +2382,16 @@ The Department of Public Safety collaborates with the Office of Environmental He
 Rowan University provides information and guidance for emergency preparedness during study abroad programs and international travel.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 The Department of Public Safety offers vehicle assistance services, such as jump-starts and vehicle lockouts, for students, faculty, and staff.
 =======
 The Department of Public Safety offers vehicle assistance services, such as jump-starts and vehicle lockouts, for students, faculty, and staff
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+The Department of Public Safety offers vehicle assistance services, such as jump-starts and vehicle lockouts, for students, faculty, and staff.
+>>>>>>> 7ad1cd2 (added)
 
 The official Rowan University website (www.rowan.edu) is the primary source of news and information about the university.
 
@@ -2372,10 +2460,13 @@ Rowan's social media accounts provide updates on construction projects, facility
 The university uses social media to promote diversity and inclusion initiatives, events, and resources.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 The President of Rowan University is the chief executive officer responsible for overseeing the overall management and administration of the institution.
 
 The university's Board of Trustees provides governance and strategic oversight, ensuring the institution's mission and goals are met.
@@ -2480,9 +2571,13 @@ The Vice President for Facilities and Operations is Joseph Campbell.
 
 The Vice President for University Relations is Joe Cardona.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> fb48b31 (addeD)
+=======
+
+>>>>>>> 7ad1cd2 (added)
 The Vice President for Research is Tabbetha Dobbins.
 
 The Vice President for Human Resources is Theresa Drye.
@@ -2628,11 +2723,14 @@ Nicole Surace is an Assistant to the Chemical Engineering Department and can be 
 Gary Thompson, Ph.D., is an Assistant Professor and can be contacted at thompsong@rowan.edu or 856-256-5357.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 
 >>>>>>> fb48b31 (addeD)
+=======
+>>>>>>> 7ad1cd2 (added)
 The Rowan University Student Government Association (SGA) represents the voice of the student body and serves as a liaison between students and university administration.
 
 SGA is responsible for addressing student concerns, advocating for student rights, and promoting campus-wide initiatives.
@@ -3164,6 +3262,10 @@ Rowan University offers a range of resources and support services for students w
 
 The university provides a variety of resources and support services for students who are interested in pursuing careers in public policy and political science, including internship opportunities, career advising, and networking events.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> fb48b31 (addeD)
+=======
+
+>>>>>>> 7ad1cd2 (added)

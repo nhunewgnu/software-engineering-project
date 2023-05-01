@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./resets.css" />
-    <link rel="stylesheet" href="./unibot.css" />
-    <script src="./unibot.js" defer></script>
-    <title>Unibot | Support Bot</title>
-<style>
+<head> <!-- set character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Set the compatibility mode to Internet Explorer and the viewport width to the width of the device screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">     <!-- Link to the Font Awesome library for icons -->
+    <link rel="stylesheet" href="unibot.css"> <!-- Link to an external stylesheet named "unibot.css" for additional styles -->
+    <title>UNIBOT</title>     <!-- Set the title of the HTML document to "UNIBOT" -->
+    <style>
         #btn-container { /* Select the element with an ID of "btn-container" and set its position */
             position: absolute;
             top: 10px;
@@ -23,13 +16,14 @@
         #btn-container button { /* Select any button inside the container and set its margin to the left to be 10px */
             margin-left: 10px;
         }
-</style>
-  </head>
-  <body>
-  <body class="space-bg">  <!-- A container for two buttons that allow the user to sign in or sign up -->
+    </style>
+</head>
+<body>
+    <body class="space-bg">  <!-- A container for two buttons that allow the user to sign in or sign up -->
+
     <div id="btn-container">
         <button id="login-btn" type="button" class="btn">
-            <strong><a href="login.html"> SIGN IN </a></strong> <!-- The text "SIGN IN" is displayed in bold -->
+            <strong>SIGN IN</strong> <!-- The text "SIGN IN" is displayed in bold -->
             <div id="container-stars"> <!-- A container for some animated stars -->
                 <div id="stars"></div>
             </div>
@@ -39,60 +33,36 @@
             </div>
         </button>
         <button id="signin-btn" type="button" class="btn">
-            <strong><a href="sign-up.html"> SIGN UP </a></strong> <!-- The text "SIGN UP" is displayed in bold -->
+            <strong>SIGN UP</strong> <!-- The text "SIGN UP" is displayed in bold -->
         </button>
     </div>
-	<div class="page-container">
-      <header>
-        <nav>
-          <img
-            class="logo"
-            src="./assets/Uni-Bot.png"
-            alt="Official logo for Unibot."
-          />
-	    <div class="slogan">All your University Solutions in one place</div>
-        </nav>
-      </header>
-      <div class="phone-container">
-        <main class="phone">
-          <header class="header">
-            <h1 class="heading">Unibot Support</h1>
-            <p class="subheading">Online now</p>
-          </header>
-          <section class="chat-box">
-            <ul class="messages">
-              <li class="message bot">
-                <img
-                  src="./assets/icon.webp"
-                  alt="Avatar image for the Unibot support bot."
-                />
-                <p>Hi there! How can I assist you today?</p>
-              </li>
-            </ul>
-          </section>
-          <footer>
-            <form id="message-form" action="">
-              <label class="sr-only" for="message"
-                >Type a message to send to Unibot Support and then press enter
-                when you're finished</label
-              >
-              <input
-                class="input"
-                type="text"
-                name="message"
-                id="message"
-                placeholder="Type your message"
-                required
-              />
-            </form>
-          </footer>
-        </main>
-      </div>
+    
+    <div class="wrapper"> <!-- A container for the main content of the page -->
+        <div class="title">UNIBOT SUPPORT</div> <!-- A title for the support section of the page -->
+        <div class="box" id="chat-box"> <!-- A chat box where messages from the bot and user will be displayed -->
+            <div class="item">
+                <div class="icon"> <!-- An icon to represent the user or bot -->
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="msg" id="greeting"> <!-- The text of the chat message -->
+                    <p>Hi there</p>
+                </div>
+            </div>
+            <br clear="both"> <!-- A line break to clear any floats inside the chat box -->
+        </div>
+
+        <div class="typing-area"> <!-- A typing area for the user to enter messages -->
+            <div class="input-field"> <!-- An input field for the user to enter text -->
+                <input placeholder="Enter your message" class="input" type="text">
+                <button onclick="sendMessage()">Send</button> <!-- A button to submit the user's message -->
+            </div>
+        </div>
     </div>
-       <script> //this will run when the page loads
+
+    <script> //this will run when the page loads
         window.onload = function() {
             var greeting = document.getElementById("greeting"); // Get the "greeting" element and set its inner HTML to a welcome message
-            greeting.innerHTML = "<p>Hi there! How can I assist you today?</p>";
+            greeting.innerHTML = "<p>Hi there! How can I assist you today?</p>"; 
         }
 
         function sendMessage() { //this will send a message
@@ -100,7 +70,7 @@
             var messageText = inputField.value;
 
             var chatBox = document.getElementById("chat-box"); // Get the chat box and create a new message element
-            var messageElement = document.createElement("div");
+            var messageElement = document.createElement("div"); 
             messageElement.classList.add("item");
             messageElement.classList.add("right");
 
@@ -132,9 +102,6 @@ function handleKeyUp(event) { // This function handles the "keyup" event
     }
 }
     </script>
-<script src="{{ url_for('static', filename='unibot.js') }}"> </script>
-
-  </body>
+    
+</body>
 </html>
-
-
