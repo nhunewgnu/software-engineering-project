@@ -1,16 +1,7 @@
 from spacy import load
 import nltk
 from nltk.corpus import stopwords
-<<<<<<< HEAD
-<<<<<<< HEAD
 import string
-=======
-import re
-import string 
->>>>>>> fb48b31 (addeD)
-=======
-import string
->>>>>>> 7ad1cd2 (added)
 import warnings
 import random
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -21,29 +12,13 @@ nlp = load("en_core_web_sm")
 stopwords_list = stopwords.words('english')
 warnings.filterwarnings("ignore")
 
-<<<<<<< HEAD
-=======
-stopwords_list = stopwords.words('english')
-warnings.filterwarnings("ignore")
-
->>>>>>> fb48b31 (addeD)
 def queries():
     with open("data.txt", "r", encoding = "UTF-8") as data_file:
         data = data_file.read()
         data = data.lower()
     data_file.close()
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     return data
-=======
-    
-    return data 
->>>>>>> fb48b31 (addeD)
-=======
-
-    return data
->>>>>>> 7ad1cd2 (added)
 
 text = queries()
 sentence_tokens = nltk.sent_tokenize(text)
@@ -67,8 +42,6 @@ def greetings(greeting_sentence):
     if greeting_sentence in greeting_inputs:
         return random.choices(greeting_response)[0]
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 def response(user_response):
     bot_response = ""
     similar_scores = train(user_response)
@@ -96,50 +69,6 @@ def response(user_response):
            # i += 1
             #similar_scores.remove(max(similar_scores))
 
-=======
-def response(user_response):   
-=======
-def response(user_response):
->>>>>>> 7ad1cd2 (added)
-    bot_response = ""
-    similar_scores = train(user_response)
-
-    if not similar_scores:
-        bot_response = bot_response + "I am unable to answer that question, sorry."
-
-    else:
-<<<<<<< HEAD
-        i = 0
-        while len(similar_scores) != 0:
-            if i == 3:
-                break
-            idx = similar_scores.index(max(similar_scores))
-            bot_response = bot_response + " " + sentence_tokens[idx].strip().capitalize() 
-            i += 1
-            similar_scores.remove(max(similar_scores))
-            
->>>>>>> fb48b31 (addeD)
-=======
-        score = max(similar_scores)
-        if score < 0.78:
-            bot_response = bot_response + "I am unable to answer that question, sorry.\
-                                            \nCould you be more specific?"
-
-        else:
-            idx = similar_scores.index(score)
-            bot_response = bot_response + sentence_tokens[idx].strip().capitalize()
-
-        #i = 0
-        #while len(similar_scores) != 0:
-         #   if i == 3:
-         #       break
-          #  idx = similar_scores.index(max(similar_scores))
-           # print(max(similar_scores))
-          #  bot_response = bot_response + " " + sentence_tokens[idx].strip().capitalize()
-           # i += 1
-            #similar_scores.remove(max(similar_scores))
-
->>>>>>> 7ad1cd2 (added)
     return bot_response
 
 def train(user_response):
@@ -151,48 +80,25 @@ def train(user_response):
 
     for i in range(len(sentence_tokens) - 1):
         ratio = fuzz.token_set_ratio(sentence_tokens[i], user_response)
-<<<<<<< HEAD
-<<<<<<< HEAD
         weighted_score = vals[i] * (ratio / 100)
         similarity_scores.append(weighted_score)
-=======
-        weighted_score = vals[0][i] + (ratio / 100)
-        similarity_scores.append(weighted_score) 
->>>>>>> fb48b31 (addeD)
-=======
-        weighted_score = vals[i] * (ratio / 100)
-        similarity_scores.append(weighted_score)
->>>>>>> 7ad1cd2 (added)
 
     return similarity_scores
 
 def chat_flow(user_input):  
     bot_response = ""    
     user_response = user_input.lower()
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7ad1cd2 (added)
     
     if len(user_response) == 0:
         bot_response += "Please ask your question"
         
     elif "bye" in user_response:
         bot_response += "Goodbye!"
-<<<<<<< HEAD
-=======
-
-    if "bye" in user_response:
-        bot_response += "Bot: Goodbye!"
->>>>>>> fb48b31 (addeD)
-=======
->>>>>>> 7ad1cd2 (added)
 
     else:
         if user_response.startswith("Thank".lower()):
             bot_reponse += "You are Welcome. Is that all"
             u_response += input("User: ")
-<<<<<<< HEAD
 
             if u_response == "yes" or u_response == "yep":
                 bot_response += "Goodbye!"
@@ -207,24 +113,3 @@ def chat_flow(user_input):
                 sentence_tokens.remove(user_response)
 
     return bot_response
-=======
-
-            if u_response == "yes" or u_response == "yep":
-                bot_response += "Goodbye!"
-
-        else:
-            if greetings(user_response) != None:
-                bot_response += greetings(user_response)
-               
-            else:
-                sentence_tokens.append(user_response)
-                bot_response += response(user_response)
-                sentence_tokens.remove(user_response)
-
-    return bot_response
-<<<<<<< HEAD
-
-
->>>>>>> fb48b31 (addeD)
-=======
->>>>>>> 7ad1cd2 (added)
