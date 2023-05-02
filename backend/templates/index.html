@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="unibot.css">
+    <script src="/Users/shivang/Documents/GitHub/software-engineering-project/backend/static/main.js" defer></script>
+    <title>Unibot | Support Bot</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+        <nav>
+          <img
+            class="logo"
+            src="./assets/Unibot Logo.png"
+            alt="Official logo for Unibot."
+          />
+          <ul>
+            <li>
+              <a href="">Sign up</a>
+            </li>
+            <li>
+              <a href="">Log in</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="phone-container">
+        <main class="phone">
+          <header class="header">
+            <h1 class="heading">Unibot Support</h1>
+            <p class="subheading">Online now</p>
+          </header>
+          <section class="chat-box">
+            <ul class="messages">
+              <li class="message bot">
+                <img
+                  src="./assets/Chatbot Image.webp"
+                  alt="Avatar image for the Unibot support bot."
+                />
+                <p>Hi there! How can I assist you today?</p>
+              </li>
+            </ul>
+          </section>
+          <footer>
+            <form id="message-form" action="">
+              <label class="sr-only" for="message"
+                >Type a message to send to Unibot Support and then press enter
+                when you're finished</label
+              >
+              <input
+                class="input"
+                type="text"
+                name="message"
+                id="message"
+                placeholder="Type your message"
+                required
+              />
+            </form>
+          </footer>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
