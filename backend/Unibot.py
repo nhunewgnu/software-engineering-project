@@ -104,8 +104,9 @@ def chat_flow(user_input):
                 bot_response += "Goodbye!"
 
         else:
-            if greetings(user_response) != None:
-                bot_response += greetings(user_response)
+            greet = greetings(user_input)
+            if greet != None:
+                bot_response += greet
                
             else:
                 sentence_tokens.append(user_response)
