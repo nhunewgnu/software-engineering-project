@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore")
 def queries():
     with open("data.txt", "r", encoding = "UTF-8") as data_file:
         data = data_file.read()
-        data = data.lower()
+        data = re.sub(r'[\n\t\r]+', ' ', data.lower())
     data_file.close()
 
     return data
