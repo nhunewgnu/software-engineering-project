@@ -1,4 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 :root {
   --clr-primary: #1b2030;
@@ -19,27 +104,13 @@ body,
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
- }
-
-.slogan {
-   font-size: 20px;
-   font-weight: bold;
-   margin-top: 10px;
-   text-align: left;
-   }
 
 .page-container {
   display: flex;
   flex-direction: column;
-  background: center / cover no-repeat url("./assets/wallpaper.png") grey;
+  background: center / cover no-repeat url("unibot-wallpaper.png") grey;
 }
 
 .logo {
@@ -134,7 +205,6 @@ footer {
   padding: 2rem 0.75rem;
   gap: 1.5rem;
   height: 30rem;
-  width: 40rem;
   overflow-y: auto;
 }
 
@@ -183,7 +253,7 @@ form {
 }
 
 .input {
-  min-width: 100%;
+  min-width: 70%;
 }
 
 .input {
@@ -195,21 +265,7 @@ form {
 }
 
 .input:focus {
-    color: rgb(255, 255, 255); /* text color */
-    background-color: #212121; /* background color */
-    outline-color: rgb(255, 43, 227); /* color of outline */
-    box-shadow: -3px -3px 15px rgb(255, 43, 227); /* adds shadow effect */
-    transition: .1s; /* adds transition effect */
-    transition-property: box-shadow; /* specifies which property to apply transition effect */
-}
-
-.sign-in, .sign-up {
-  display: inline-block;
-  }
-
-body.space-bg { /* Website's background is imported from the link below */
-  background-image: url("https://github.com/nhunewgnu/software-engineering-project/blob/main/unibot_wallpaper.png");
-  background-size: cover;
+  outline: 2px solid var(--clr-accent);
 }
 
 footer {
@@ -223,200 +279,14 @@ footer {
 @media (max-width: 28.125rem) {
   form,
   .input {
-    background-color: #212121; /* background color */
-    max-width: 500px; /* maximum width */
-    height: 40px; /* height */
-    padding: 10px; /* adds padding */
-    border: 2px solid white; /* border */
-    border-radius: 5px; /* creates rounded borders */
-}
+    min-width: 100%;
+  }
 
   .logo {
-    max-width: 8rem;
+    max-width: 6rem;
   }
 
   .message {
     font-size: 1rem;
   }
 }
-
-/*button*/
-
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 6rem;
-    height: 2rem;
-    background-size: 300% 300%;
-    backdrop-filter: blur(1rem);
-    border-radius: 5rem;
-    transition: 0.5s;
-    animation: gradient_301 5s ease infinite;
-    border: double 3px transparent;
-    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-  }
-
-  .buttons {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .btn + .btn {
-    margin-left: 1rem;
-  }
-
-  #container-stars {
-    position: fixed;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transition: 0.5s;
-    backdrop-filter: blur(1rem);
-    border-radius: 5rem;
-  }
-
-  strong {
-    z-index: 2;
-    font-family: 'Avalors Personal Use';
-    font-size: 11px;
-    letter-spacing: 4px;
-    color: #FFFFFF;
-    text-shadow: 0 0 4px white;
-  }
-
-  #glow {
-    position: absolute;
-    display: flex;
-    width: 12rem;
-  }
-
-  .circle {
-    width: 100%;
-    height: 30px;
-    filter: blur(2rem);
-    animation: pulse_3011 4s infinite;
-    z-index: -1;
-  }
-
-  .circle:nth-of-type(1) {
-    background: rgba(254, 83, 186, 0.636);
-  }
-
-  .circle:nth-of-type(2) {
-    background: rgba(142, 81, 234, 0.704);
-  }
-
-  .btn:hover #container-stars {
-    z-index: 1;
-    background-color: #212121;
-  }
-
-  .btn:hover {
-    transform: scale(1.1)
-  }
-
-  .btn:active {
-    border: double 4px #FE53BB;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    animation: none;
-  }
-
-  .btn:active .circle {
-    background: #FE53BB;
-  }
-
-  #stars {
-    position: relative;
-    background: transparent;
-    width: 200rem;
-    height: 200rem;
-  }
-
-  #stars::after {
-    content: "";
-    position: absolute;
-    top: -10rem;
-    left: -100rem;
-    width: 100%;
-    height: 100%;
-    animation: animStarRotate 90s linear infinite;
-  }
-
-  #stars::after {
-    background-image: radial-gradient(#ffffff 1px, transparent 1%);
-    background-size: 50px 50px;
-  }
-
-  #stars::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 170%;
-    height: 500%;
-    animation: animStar 60s linear infinite;
-  }
-
-  #stars::before {
-    background-image: radial-gradient(#ffffff 1px, transparent 1%);
-    background-size: 50px 50px;
-    opacity: 0.5;
-  }
-
-  @keyframes animStar {
-    from {
-      transform: translateY(0);
-    }
-
-    to {
-      transform: translateY(-135rem);
-    }
-  }
-
-  @keyframes animStarRotate {
-    from {
-      transform: rotate(360deg);
-    }
-
-    to {
-      transform: rotate(0);
-    }
-  }
-
-  @keyframes gradient_301 {
-    0% {
-      background-position: 0% 50%;
-    }
-
-    50% {
-      background-position: 100% 50%;
-    }
-
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  @keyframes pulse_3011 {
-    0% {
-      transform: scale(0.75);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-    }
-
-    70% {
-      transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-    }
-
-    100% {
-      transform: scale(0.75);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-  }
-
-
