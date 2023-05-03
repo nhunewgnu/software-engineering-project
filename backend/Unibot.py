@@ -105,5 +105,3 @@ def chat_flow(user_input):
                 sentence_tokens.remove(user_response)
 
     return bot_response
-
-
