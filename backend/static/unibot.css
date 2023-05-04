@@ -1,155 +1,198 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* { /* Applying global styles to all HTML elements */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --clr-primary: #1b2030;
+  --clr-message: #555354;
+  --clr-white: #dfdfdf;
+  --clr-accent: #f985d1;
+  --br-main: 0.5rem;
 }
 
-body { /* Applying styles to the body element */
-    font-family: 'Poppins', sans-serif;
-    background-color: black;  /* Setting the background color of the body */
-    display: flex; /* Using flexbox to center the content vertically and horizontally */
-    justify-content: center; 
-    align-items: center;
-    min-height: 100vh;
+* {
+  box-sizing: border-box;
 }
 
-body.space-bg { /* Website's background is imported from the link below */
-  background-image: url("https://media1.giphy.com/media/l5JbspfwZ0yjHjlJ0K/giphy.gif?cid=ecf05e47yetqrviozpo6tvc9s7zbslzxgig19ozxc0xgffrk&rid=giphy.gif&ct=g");
-  background-size: cover;
-  animation: move-bg 30s linear infinite;
+html,
+body,
+.page-container {
+  min-height: 100%;
 }
 
-/* This is a keyframe animation that will move the background position 
-   of an element from left to right */
-@keyframes move-bg {
-  from {
-    background-position: 10 0; /* Initial background position */
-  }
-  to {
-    background-position: 50% 0; /* Final background position */
-  }
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Added logo styling */
-      .logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 80px;
-        height: 80px;
-        background-image: url('https://cdn.discordapp.com/attachments/1070089250286075945/1093232253573804032/Uni-Bot.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: 10px;
-      }
-
-/* Container with a fixed width of 370 pixels */
-.wrapper {
-  width: 370px;
+.page-container {
+  display: flex;
+  flex-direction: column;
+  background: center / cover no-repeat url("unibot_wallpaper.png") grey;
 }
 
-.wrapper .title a {
-    color: white;
-    text-decoration: none;
+.logo {
+  max-width: 10rem;
 }
 
-/* Style of a title element within the wrapper */
-.wrapper .title {
-  color: rgb(255, 43, 227); /* Sets the title color to a shade of pink */
-  line-height: 2.5; /* Sets the line height to 2.5 times the font size */
-  text-align: center; /* Centers the text */
-  font-size: 28px; /* Sets the font size to 28 pixels */
-  border-radius: 29px; /* Rounds the corners of the title element */
-  background: #121212; /* Sets the background color to a dark gray */
-  box-shadow: 
-    inset -6px -6px 12px #0f0f0f, /* Adds a shadow effect on the top and left sides */
-    inset 6px 6px 12px #151515; /* Adds a shadow effect on the bottom and right sides */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: max(1vw, 1rem) 5vw;
+  color: white;
 }
 
-/* Box element within the wrapper*/
-.wrapper .box {
-  border: 1px solid #121212; /* Adds a solid border to the box */
-  padding: 10px 15px; /* Adds padding to the top and bottom (10px) and left and right (15px) */
-  min-height: 500px; /* Sets the minimum height of the box to 500 pixels */
-  max-height: 400px; /* Sets the maximum height of the box to 400 pixels */
-  border-radius: 15px; /* Rounds the corners of the box element */
-  background: #121212; /* Sets the background color to a dark gray */
+nav ul {
+  display: flex;
+  gap: max(2rem, 3vw);
 }
 
-/* Style of an item element within the box */
-.wrapper .box .item {
-  display: flex; /* Sets the item to display as a flexbox */
-  float: left; /* Floats the item to the left */
-  margin: 10px 0; /* Adds margin to the top and bottom (10px) and sets the left and right margin to 0 */
+nav ul li a {
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
-/* Styles for icon in chat box */
-.wrapper .box .item .icon {
-    background: #000000; /* background color */
-    color: white; /* text color */
-    width: 40px; /* width of icon */
-    height: 40px; /* height of icon */
-    text-align: center; /* aligns text in center of icon */
-    line-height: 40px; /* vertical alignment of text in icon */
-    border-radius: 50%; /* creates circle border */
+li {
+  font-size: 1.125rem;
 }
 
-/* Styles for message box in chat */
-.wrapper .box .item .msg {
-    background: #ffffff; /* background color */
-    color: rgb(0, 0, 0); /* text color */
-    border-radius: 10px; /* creates rounded borders */
-    width: 150px; /* width of message box */
-    margin-left: 10px; /* space between icon and message box */
+a {
+  color: white;
+  text-decoration: none;
 }
 
-/* Styles for paragraph element inside message box */
-.wrapper .box .item .msg p {
-    padding: 10px; /* adds padding to paragraph element */
+.phone-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Styles for right-aligned items in chat */
-.wrapper .box .item.right {
-    float: right; /* aligns item to the right */
+.phone {
+  max-width: fit-content;
+  margin: 0 auto;
+  border-radius: var(--br-main);
+  background-color: #303030;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 1px solid black;
+  margin: 2rem 0.5rem;
 }
 
-/* Styles for message box in right-aligned items */
-.wrapper .box .item.right .msg {
-    background: #000000; /* background color */
-    color: #ffffff; /* text color */
+.heading,
+form {
+  margin: 0 auto;
+  max-width: fit-content;
 }
 
-/* Styles for input field in chat */
-.wrapper .typing-area .input-field {
-    width: 100%; /* width of input field */
-    position: relative; /* sets position to relative */
+.heading {
+  background: rgb(249, 133, 209);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 133, 209, 1) 0%,
+    rgba(235, 57, 227, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* Styles for text input in input field */
-.wrapper .typing-area .input-field input {
-    width: 100%; /* width of text input */
-    padding: 10px; /* adds padding to text input */
-    border: 1px solid transparent; /* adds transparent border */
-    border-radius: 30px; /* creates rounded borders */
-    outline: none; /* removes outline */
-    padding-right: 70px; /* space for submit button */
-    font-family: 'Poppins', sans-serif; /* sets font family */
-    transition: 0.3s all ease; /* adds transition effect */
+.subheading {
+  color: var(--clr-white);
+  max-width: fit-content;
+  margin: 0.25rem auto 0 auto;
 }
 
-/* Styles for custom input component */
+.header,
+footer {
+  padding: 1.25rem;
+}
+
+.header {
+  background-color: #2c292a;
+  border-radius: var(--br-main) var(--br-main) 2rem 2rem;
+  padding: 2rem;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 2rem 0.75rem;
+  gap: 1.5rem;
+  height: 30rem;
+  overflow-y: auto;
+}
+
+.message {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.message img {
+  max-width: 2.25rem;
+  max-height: 2.25rem;
+}
+
+.message p {
+  max-width: 40ch;
+  margin: 0 auto 0 0;
+  padding: 0.75rem;
+  border-radius: var(--br-main) var(--br-main) var(--br-main) 0;
+  background: rgb(85, 83, 84);
+  background: linear-gradient(
+    270deg,
+    rgba(85, 83, 84, 1) 0%,
+    rgba(106, 106, 106, 1) 100%
+  );
+  color: white;
+}
+
+.message.user p {
+  max-width: 30ch;
+  margin: auto 0 auto auto;
+  background: rgb(249, 133, 209);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 133, 209, 1) 0%,
+    rgba(235, 57, 227, 1) 100%
+  );
+  border-radius: var(--br-main) var(--br-main) 0 var(--br-main);
+  color: black;
+}
+
+.msg {
+  max-width: 40ch;
+  margin: 0 auto 0 0;
+  padding: 0.75rem;
+  border-radius: var(--br-main) var(--br-main) var(--br-main) 0;
+  background: rgb(85, 83, 84);
+  background: linear-gradient(
+    270deg,
+    rgba(85, 83, 84, 1) 0%,
+    rgba(106, 106, 106, 1) 100%
+  );
+  color: white;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+}
+
 .input {
-    background-color: #212121; /* background color */
-    max-width: 500px; /* maximum width */
-    height: 40px; /* height */
-    padding: 10px; /* adds padding */
-    border: 2px solid white; /* border */
-    border-radius: 5px; /* creates rounded borders */
+  min-width: 70%;
 }
 
-/* Styles for input component when focused */
+.input {
+  padding: 0.5rem 1.5rem;
+  background-color: #2c292a;
+  border-radius: 2rem;
+  color: var(--clr-white);
+  border: 1px solid black;
+}
+
 .input:focus {
     color: rgb(255, 255, 255); /* text color */
     background-color: #212121; /* background color */
@@ -159,33 +202,38 @@ body.space-bg { /* Website's background is imported from the link below */
     transition-property: box-shadow; /* specifies which property to apply transition effect */
 }
 
-/* Styles for submit button in input field */
-.wrapper .typing-area .input-field button {
-    position: absolute; /* sets position to absolute */
-    top: 50%; /* aligns to center vertically */
-    right: 10px; /* aligns to right side */
-    transform: translateY(-50%); /* centers button vertically */
-    background: transparent; /* makes background transparent */
-    border: 1px solid rgb(255, 43, 227); /* adds solid 1px border with the color*/
-    padding: 5px 10px; 
-    border-radius: 3px;
-    color: rgb(255, 255, 255);
-    outline: none;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.3s all ease;
-    color: white;
+body.space-bg { /* Website's background is imported from the link below */
+  background-image: url("https://github.com/nhunewgnu/software-engineering-project/blob/main/unibot_wallpaper.png");
+  background-size: cover;
+  animation: move-bg 30s linear infinite;
 }
 
-.wrapper .typing-area .input-field button:hover {
-    border-radius: 150px;
-    background: linear-gradient(315deg, #ffcef9, #fe66d3, rgb(255, 43, 227));
+footer {
+  border-radius: 0 0 var(--br-main) var(--br-main);
+  padding-bottom: 1.5rem;
+  border-bottom: 3.5rem solid #2c292a;
+  display: flex;
+  justify-content: center;
 }
 
-.wrapper .typing-area .input-field input:valid ~ button {
-    opacity: 10;
-    pointer-events: auto;
+@media (max-width: 28.125rem) {
+  form,
+  .input {
+    background-color: #212121; /* background color */
+    max-width: 500px; /* maximum width */
+    height: 40px; /* height */
+    padding: 10px; /* adds padding */
+    border: 2px solid white; /* border */
+    border-radius: 5px; /* creates rounded borders */
+}
+
+  .logo {
+    max-width: 8rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
 }
 
 /*button*/
@@ -211,11 +259,11 @@ body.space-bg { /* Website's background is imported from the link below */
     display: flex;
     justify-content: flex-end;
   }
-  
+
   .btn + .btn {
     margin-left: 1rem;
   }
-  
+
   #container-stars {
     position: fixed;
     z-index: -1;
@@ -226,7 +274,7 @@ body.space-bg { /* Website's background is imported from the link below */
     backdrop-filter: blur(1rem);
     border-radius: 5rem;
   }
-  
+
   strong {
     z-index: 2;
     font-family: 'Avalors Personal Use';
@@ -235,13 +283,13 @@ body.space-bg { /* Website's background is imported from the link below */
     color: #FFFFFF;
     text-shadow: 0 0 4px white;
   }
-  
+
   #glow {
     position: absolute;
     display: flex;
     width: 12rem;
   }
-  
+
   .circle {
     width: 100%;
     height: 30px;
@@ -249,31 +297,31 @@ body.space-bg { /* Website's background is imported from the link below */
     animation: pulse_3011 4s infinite;
     z-index: -1;
   }
-  
+
   .circle:nth-of-type(1) {
     background: rgba(254, 83, 186, 0.636);
   }
-  
+
   .circle:nth-of-type(2) {
     background: rgba(142, 81, 234, 0.704);
   }
-  
+
   .btn:hover #container-stars {
     z-index: 1;
     background-color: #212121;
   }
-  
+
   .btn:hover {
     transform: scale(1.1)
   }
-  
+
   .btn:active {
     border: double 4px #FE53BB;
     background-origin: border-box;
     background-clip: content-box, border-box;
     animation: none;
   }
-  
+
   .btn:active .circle {
     background: #FE53BB;
   }
@@ -284,7 +332,7 @@ body.space-bg { /* Website's background is imported from the link below */
     width: 200rem;
     height: 200rem;
   }
-  
+
   #stars::after {
     content: "";
     position: absolute;
@@ -294,12 +342,12 @@ body.space-bg { /* Website's background is imported from the link below */
     height: 100%;
     animation: animStarRotate 90s linear infinite;
   }
-  
+
   #stars::after {
     background-image: radial-gradient(#ffffff 1px, transparent 1%);
     background-size: 50px 50px;
   }
-  
+
   #stars::before {
     content: "";
     position: absolute;
@@ -309,7 +357,7 @@ body.space-bg { /* Website's background is imported from the link below */
     height: 500%;
     animation: animStar 60s linear infinite;
   }
-  
+
   #stars::before {
     background-image: radial-gradient(#ffffff 1px, transparent 1%);
     background-size: 50px 50px;
@@ -320,47 +368,47 @@ body.space-bg { /* Website's background is imported from the link below */
     from {
       transform: translateY(0);
     }
-  
+
     to {
       transform: translateY(-135rem);
     }
   }
-  
+
   @keyframes animStarRotate {
     from {
       transform: rotate(360deg);
     }
-  
+
     to {
       transform: rotate(0);
     }
   }
-  
+
   @keyframes gradient_301 {
     0% {
       background-position: 0% 50%;
     }
-  
+
     50% {
       background-position: 100% 50%;
     }
-  
+
     100% {
       background-position: 0% 50%;
     }
   }
-  
+
   @keyframes pulse_3011 {
     0% {
       transform: scale(0.75);
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
     }
-  
+
     70% {
       transform: scale(1);
       box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
     }
-  
+
     100% {
       transform: scale(0.75);
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
