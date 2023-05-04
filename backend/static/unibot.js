@@ -23,11 +23,11 @@ const loginBtn = document.getElementById("login-btn");
 function sendMessage() {
     var inputField = document.querySelector(".input");
     var messageText = inputField.value;
-    var chatBox = document.querySelector(".box");
+    var chatBox = document.querySelector("#chat-box ul.messages");
 
     // Display user message in chat box
-    var userMsg = document.createElement("div");
-    userMsg.classList.add("messages", "right");
+    var userMsg = document.createElement("li");
+    userMsg.classList.add("message", "user");
     chatBox.appendChild(userMsg);
 
     // Send message using AJAX
@@ -36,9 +36,9 @@ function sendMessage() {
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.onload = function() {
         if (xhr.status === 200) {
-            var botMsg = document.createElement("div");
-            botMsg.classList.add("item");
-            botMsg.innerHTML = '<div class="icon"><i class="fa fa-user"></i></div><div class="msg"><p>' + xhr.responseText + '</p></div>';
+            var botMsg = document.createElement("li");
+            botMsg.classList.add("message", "bot");
+            botMsg.innerHTML = '<img src="../templates/img/ChatbotLogo.webp" alt="Avatar image for the Unibot support bot."/><p>' + xhr.responseText + '</p>';
             chatBox.appendChild(botMsg);
             inputField.value = "";
         }
