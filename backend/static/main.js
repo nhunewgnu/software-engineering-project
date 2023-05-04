@@ -1,7 +1,7 @@
 const messages = document.querySelector(".messages");
 const messageForm = document.querySelector("#message-form");
 const input = document.querySelector("#message");
-
+/*
 messageForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   const message = input.value;
@@ -17,6 +17,7 @@ messageForm.addEventListener("submit", async (event) => {
   // send message to some api
   console.log(message);
 });
+*/
 
 function sendMessage() {
   var inputField = document.querySelector(".input");
