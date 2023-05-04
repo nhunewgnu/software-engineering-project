@@ -37,7 +37,7 @@ text = queries()
 sentence_tokens = text
 
 def greetings(greeting_sentence):
-    greeting_inputs = ["hello", "hi", "hey", "how is it going?", "how are you doing?", "what's up", "whats up",
+    greeting_inputs = ["howdy", "hello", "hi", "hey", "how is it going?", "how are you doing?", "what's up", "whats up",
                        "hi there"]
     greeting_response = ["Hello", "Hi", "Hey", "Howdy", "How is it going?", "How are you doing?"]
 
@@ -52,13 +52,13 @@ def response(user_response):
     similar_scores = train(user_response)
 
     if not similar_scores:
-        bot_response = bot_response + "I am unable to answer that question, sorry."
+        bot_response = bot_response + "I am unable to answer that question, Sorry."
 
     else:
         score = max(similar_scores)
 
         if score < 0.80:
-            bot_response = bot_response + "I am unable to answer that question, sorry.\
+            bot_response = bot_response + "I am unable to answer that question, Sorry.\
                                             \nCould you be more specific?"
 
         else:

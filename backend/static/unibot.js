@@ -38,7 +38,7 @@ function sendMessage() {
         if (xhr.status === 200) {
             var botMsg = document.createElement("li");
             botMsg.classList.add("message", "bot");
-            botMsg.innerHTML = '<img src="../templates/img/ChatbotLogo.webp" alt="Avatar image for the Unibot support bot."/><p>' + xhr.responseText + '</p>';
+            botMsg.innerHTML = '<img src="../static/ChatbotLogo.webp" alt="Avatar image for the Unibot support bot."/><p>' + JSON.parse(xhr.responseText); + '</p>';
             chatBox.appendChild(botMsg);
             inputField.value = "";
         }
